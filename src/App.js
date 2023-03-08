@@ -30,12 +30,12 @@ function App() {
     
     <>
     <p>APP</p>
-    
+
     <ExpenseItem 
     expenseDate={expenses[0].date}
     expenseTitle={expenses[0].title} 
     expenseAmount={expenses[0].amount}
-    ></ExpenseItem>
+    />
    
     </>
   );
