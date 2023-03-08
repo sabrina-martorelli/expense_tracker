@@ -36,6 +36,12 @@ function App() {
     expenseTitle={expenses[0].title} 
     expenseAmount={expenses[0].amount}
     />
+
+<ExpenseItem 
+    expenseDate={expenses[1].date}
+    expenseTitle={expenses[1].title} 
+    expenseAmount={expenses[1].amount}
+    />
    
     </>
   );
