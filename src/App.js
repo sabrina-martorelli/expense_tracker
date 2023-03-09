@@ -1,5 +1,6 @@
 import React from 'react';
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
 
@@ -26,20 +27,20 @@ function App() {
   ];
 
 //Example not using JSX
-return React.createElement(
-'div',
-{},
-React.createElement('h2', {}, "APP"),
-React.createElement(Expenses, {items: expenses})
-);
+// return React.createElement(
+// 'div',
+// {},
+// React.createElement('h2', {}, "APP"),
+// React.createElement(Expenses, {items: expenses})
+// );
 
 //JSX solution 
-  // return (
-  //   <div>
-  //   <h2>APP</h2>
-  //   <Expenses items={expenses} /> 
-  //   <div/>
-  // );
+  return (
+    <div>
+     <NewExpense />
+    <Expenses items={expenses} /> 
+    </div>
+  );
 }
 
 export default App;
