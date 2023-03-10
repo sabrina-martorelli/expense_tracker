@@ -1,9 +1,10 @@
 
 import React, { useState } from 'react';
-import ExpenseItem from './ExpenseItem';
+
 import Card from '../UI/Card.js';
 import ExpensesFilter from './ExpensesFilter';
 import './Expenses.css';
+import ExpensesList from './ExpensesList';
 
 
 const Expenses = (props) => {
@@ -26,6 +27,10 @@ const Expenses = (props) => {
                 selected={filteredYear}
                 onChangeFilter={filterChangeHandler} />
 
+        <ExpensesList  items={filteredExpenses}/>
+
+
+        {/* Solution using ternary operator (see ExpensesList for new solution)
             {filteredExpenses.length === 0
                 ? <p>No expenses found.</p>
                 : filteredExpenses.map((expense) => (
@@ -35,7 +40,7 @@ const Expenses = (props) => {
                         expenseTitle={expense.title}
                         expenseAmount={expense.amount}
                     />
-                ))}
+                ))} */}
 
 
 
