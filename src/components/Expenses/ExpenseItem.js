@@ -3,7 +3,8 @@ import Card from '../UI/Card.js';
 
 import './ExpenseItem.css';
 
-//Example of Stateless, presentational o dum component . No use of useState on it (Stateful or start components)
+//Example of Stateless, presentational o dum component . 
+//No use of useState on it (Stateful or start components)
 
 const ExpenseItem = (props) => {
 
