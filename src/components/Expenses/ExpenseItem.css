@@ -18,11 +18,11 @@
   }
   
   .expense-item h2 {
-    color: #3a3a3a;
+   
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
-    color: #6d6875;
+    color: #4d4b51;
   }
   
   .expense-item__price {
@@ -30,7 +30,7 @@
     font-weight: bold;
     color: white;
     background-color: #6d6875;
-    border: 1px solid white;
+   
     padding: 0.5rem;
     border-radius: 12px;
   }
