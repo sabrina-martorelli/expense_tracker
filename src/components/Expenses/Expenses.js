@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 
 import Card from '../UI/Card.js';
 import ExpensesFilter from './ExpensesFilter';
-import './Expenses.css';
 import ExpensesList from './ExpensesList';
-
+import ExpensesChart from './ExpensesChart';
+import './Expenses.css';
 
 const Expenses = (props) => {
 
@@ -26,11 +26,11 @@ const Expenses = (props) => {
             <ExpensesFilter
                 selected={filteredYear}
                 onChangeFilter={filterChangeHandler} />
+            <ExpensesChart expenses={filteredExpenses} />
+            <ExpensesList items={filteredExpenses} />
 
-        <ExpensesList  items={filteredExpenses}/>
 
-
-        {/* Solution using ternary operator (see ExpensesList for new solution)
+            {/* Solution using ternary operator (see ExpensesList for new solution)
             {filteredExpenses.length === 0
                 ? <p>No expenses found.</p>
                 : filteredExpenses.map((expense) => (
