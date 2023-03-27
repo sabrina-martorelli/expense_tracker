@@ -1,4 +1,5 @@
-# Simple expense tracker
+# Simple expense tracker - (Course: "React - The Complete Guide" from: Udemy)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
